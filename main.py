@@ -102,7 +102,10 @@ def main():
             labels = labels.split(",")
         else:
             labels = algos
-        plot.table_backtest(load_config(), algos, labels, format=options.format)
+        #plot.table_backtest(load_config(), algos, labels, format=options.format)
+        
+        # plot and save to csv file 
+        plot.table_backtest(load_config(), algos, labels, format="csv")
 
 def _set_logging_by_algo(console_level, file_level, algo, name):
     if algo.isdigit():
@@ -130,3 +133,4 @@ def _config_by_algo(algo):
 
 if __name__ == "__main__":
     main()
+    print("=======End of program======")

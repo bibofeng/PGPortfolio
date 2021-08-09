@@ -17,7 +17,7 @@ def train_one(save_path, config, log_file_dir, index, logfile_level, console_lev
     :param config: the json configuration file
     :param log_file_dir: the directory to save the tensorboard logging file, could be None
     :param index: identifier of this train, which is also the sub directory in the train_package,
-    if it is 0. nothing would be saved into the summary file.
+                  if it is 0. nothing would be saved into the summary file.
     :param logfile_level: logging level of the file
     :param console_level: logging level of the console
     :param device: 0 or 1 to show which gpu to use, if 0, means use cpu instead of gpu

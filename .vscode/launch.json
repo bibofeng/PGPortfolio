@@ -13,6 +13,14 @@
             "console": "integratedTerminal"
         },
         {
+            "name": "PGPortfolio generator",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["--mode","generate", "--repeat","1"],
+            "console": "integratedTerminal"
+        },
+        {
             "name": "PGPortfolio train",
             "type": "python",
             "request": "launch",
@@ -20,6 +28,42 @@
             "args": ["--mode","train", "--processes","1"],
             "console": "integratedTerminal"
         },
+
+        {
+            "name": "PGPortfolio backtest",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["--mode","backtest", "--algo","1"],
+            "console": "integratedTerminal"
+        },
+
+        {
+            "name": "PGPortfolio save_test",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["--mode","save_test_data"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "PGPortfolio plot",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["--mode","plot", "--algos","1"],
+            "console": "integratedTerminal"
+        },
+
+        {
+            "name": "PGPortfolio plot table",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["--mode","table", "--algos","1"],
+            "console": "integratedTerminal"
+        },
+
         {
             "name": "PGPortfolion download",
             "type": "python",

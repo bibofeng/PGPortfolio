@@ -107,3 +107,6 @@ train_package/
 .DS_Store
 .idea/
 *.db
+compare2017-07-01.csv
+result.eps
+test_data.csv

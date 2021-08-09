@@ -142,6 +142,7 @@ def table_backtest(config, algos, labels=None, format="raw",
     elif format == "raw":
         print(dataframe.to_string())
     elif format == "csv":
+        print(dataframe.to_string())
         dataframe.to_csv("./compare"+end.strftime("%Y-%m-%d")+".csv")
     else:
         raise ValueError("The format " + format + " is not supported")
